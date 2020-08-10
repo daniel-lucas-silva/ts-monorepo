@@ -2,10 +2,10 @@
   "extends": "../../tsconfig.server.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "baseUrl": "./",
     "rootDir": "./src",
+    "baseUrl": ".",
     "composite": true
   },
   "include": ["src/**/*"],
-  "references": [{ "path": "../core" }]
+  "references": [{ "path": "../leaf" }]
 }

@@ -1,1 +1,1 @@
-export const experiment = () => "Experiment";
+export const experiment = () => "Experiment Successful";

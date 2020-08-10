@@ -1,9 +1,9 @@
 //prettier-ignore
 {
+  "exclude": ["node_modules"],
   "compilerOptions": {
     /* Basic Options */
     "incremental": true,                      /* Enable incremental compilation */
-    "baseUrl": "./",                          /* Base directory to resolve non-absolute module names. */
     "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
     "lib": ["ESNEXT"],                        /* Specify library files to be included in the compilation. */
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */,
@@ -13,7 +13,15 @@
     "allowSyntheticDefaultImports": true,     /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
     "declaration": true,                      /* Generates corresponding '.d.ts' file. */
     "sourceMap": true,                        /* Generates corresponding '.map' file. */
-
+    "isolatedModules": true,                  /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+    "baseUrl": "./",                           /* Base directory to resolve non-absolute module names. */
+    "rootDir": "./",
+    "paths": {                                /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+      "@ts-monorepo/leaf": ["../leaf/src"],
+      "@ts-monorepo/leaf/*": ["../leaf/src/*"],
+      "@ts-monorepo/core": ["../core/src"],
+      "@ts-monorepo/core/*": ["../core/src/*"],
+    },
     // "allowJs": true,                       /* Allow javascript files to be compiled. */
     // "checkJs": true,                       /* Report errors in .js files. */
     // "outFile": "./",                       /* Concatenate and emit output to single file. */
@@ -24,7 +32,6 @@
     // "removeComments": true,                /* Do not emit comments to output. */
     // "noEmit": true,                        /* Do not emit outputs. */
     // "importHelpers": true,                 /* Import emit helpers from 'tslib'. */
-    // "isolatedModules": true,               /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
 
     /* Strict Type-Checking Options */
     // "noImplicitAny": true,                 /* Raise error on expressions and declarations with an implied 'any' type. */
@@ -43,7 +50,6 @@
 
     /* Module Resolution Options */
     // "moduleResolution": "node",            /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
-    // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
     // "types": [],                           /* Type declaration files to be included in compilation. */
@@ -60,5 +66,5 @@
     // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
   },
-  "exclude": ["node_modules"],
+
 }
