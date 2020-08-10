@@ -1,0 +1,16 @@
+{
+  "name": "ts-monorepo",
+  "version": "0.0.1",
+  "description": "typescript monorepo",
+  "author": "chance dinkins",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "tslib": "^2.0.1"
+  }
+}

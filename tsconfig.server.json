@@ -1,0 +1,9 @@
+//prettier-ignore
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    "target": "ESNext"
+  },
+  "ts-node": {}
+}

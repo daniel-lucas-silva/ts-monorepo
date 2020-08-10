@@ -1,0 +1,10 @@
+{
+  "name": "@ts-monorepo/api",
+  "version": "0.0.1",
+  "description": "leaf node",
+  "main": "dist/index.js",
+  "author": "chance dinkins",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {}
+}
