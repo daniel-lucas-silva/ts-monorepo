@@ -7,6 +7,14 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@ts-monorepo/core": "0.0.1"
+    "@ts-monorepo/core": "0.0.1",
+    "tslib": "^2.0.1"
+  },
+  "scripts": {
+    "dev": "ts-node --build -r tsconfig-paths/register ./src/index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7",
+    "ts-loader": "^8.0.2"
   }
 }
