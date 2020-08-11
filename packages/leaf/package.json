@@ -7,5 +7,8 @@
   "author": "chance dinkins",
   "license": "MIT",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "clean": "rimraf tsconfig.tsbuildinfo dist"
+  }
 }

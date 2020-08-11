@@ -9,5 +9,8 @@
   "private": true,
   "dependencies": {
     "@ts-monorepo/leaf": "0.0.1"
+  },
+  "scripts": {
+    "clean": "rimraf tsconfig.tsbuildinfo dist"
   }
 }
