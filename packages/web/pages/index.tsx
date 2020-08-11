@@ -1,9 +1,7 @@
-import { Spike } from 'models/spike'
-
+import { Spike } from '@ts-monorepo/core'
 export const Home = () => {
-  const s: Spike = {
-    message: 'good',
-  }
-  return <pre>{JSON.stringify(s.message)}</pre>
+  const s: Spike = new Spike('sdf')
+  // const S = new Spike('this fails to compile')
+  return <div>{s.message}</div>
 }
 export default Home

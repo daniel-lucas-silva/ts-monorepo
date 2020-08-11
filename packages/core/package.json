@@ -4,7 +4,7 @@
   "description": "leaf node",
   "main": "dist/index.js",
   "author": "chance dinkins",
-  "types": "dist/index.d.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -12,6 +12,7 @@
   },
   "scripts": {
     "clean": "rimraf tsconfig.tsbuildinfo dist",
-    "gentypes": "tsc --outFile ../web/@types/core --emitDeclarationOnly --isolatedModules false "
+    "build": "tsc --build",
+    "gentypes": "tsc --outDir ./dist/.types --emitDeclarationOnly"
   }
 }
