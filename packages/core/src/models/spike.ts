@@ -1,4 +1,4 @@
-import { experiment } from "@ts-monorepo/leaf";
+import { experiment } from '@ts-monorepo/leaf';
 
 export class Spike {
   message: string;

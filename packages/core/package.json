@@ -12,6 +12,6 @@
   },
   "scripts": {
     "clean": "rimraf tsconfig.tsbuildinfo dist",
-    "gentypes": "tsc --outFile ../web/@types/core/types --emitDeclarationOnly --isolatedModules false "
+    "gentypes": "tsc --outFile ../web/@types/core --emitDeclarationOnly --isolatedModules false "
   }
 }
