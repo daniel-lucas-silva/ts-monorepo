@@ -11,7 +11,8 @@
   "scripts": {
     "api": "yarn workspace @ts-monorepo/api",
     "leaf": "yarn workspace @ts-monorepo/leaf",
-    "core": "yarn workspace @ts-monorepo/core"
+    "core": "yarn workspace @ts-monorepo/core",
+    "web": "yarn workspace @ts-monorepo/web"
   },
   "dependencies": {
     "tslib": "^2.0.1"

@@ -11,6 +11,7 @@
     "@ts-monorepo/leaf": "0.0.1"
   },
   "scripts": {
-    "clean": "rimraf tsconfig.tsbuildinfo dist"
+    "clean": "rimraf tsconfig.tsbuildinfo dist",
+    "gentypes": "tsc --outFile ../web/@types/core/types --emitDeclarationOnly --isolatedModules false "
   }
 }

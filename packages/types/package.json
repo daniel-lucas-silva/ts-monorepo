@@ -1,0 +1,14 @@
+{
+  "name": "@ts-monorepo/types",
+  "version": "0.0.1",
+  "description": "leaf node",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "chance dinkins",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "clean": "rimraf tsconfig.tsbuildinfo dist"
+  }
+}
