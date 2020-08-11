@@ -14,13 +14,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": "./",
-    "rootDir": "./",
+    "rootDir": "./"
     // "types": ["@ts-monorepo/core"],
-    "paths": {
-      "@ts-monorepo/leaf/*": ["../leaf/src/*"],
-      "@ts-monorepo/core/*": ["../core/src/*"],
-      "@ts-monorepo/api/*": ["../api/src/*"]
-    }
   },
 
   "exclude": ["node_modules", ".next", "out"],
