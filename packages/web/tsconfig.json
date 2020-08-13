@@ -14,9 +14,14 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": "./",
-    "rootDir": "./"
-    // "types": ["@ts-monorepo/core"],
+    "rootDir": "./",
+    "types": ["@ts-monorepo/core"],
+    "paths": {
+      "@ts-monorepo/leaf/*": ["../leaf/src/*"],
+      "@ts-monorepo/core/*": ["../core/src/*"]
+    }
   },
+  "references": [{ "path": "../leaf" }],
 
   "exclude": ["node_modules", ".next", "out"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
