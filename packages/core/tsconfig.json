@@ -3,11 +3,12 @@
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src",
-    "rootDirs": ["./src"],
-    "baseUrl": ".",
     "composite": true
   },
-
-  "include": ["src/**/*"],
-  "references": [{ "path": "../leaf" }]
+  "references": [
+    {
+      "path": "../leaf"
+    }
+  ],
+  "include": ["src/**/*"]
 }

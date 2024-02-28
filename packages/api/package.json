@@ -17,7 +17,7 @@
     "clean": "rimraf tsconfig.tsbuildinfo dist"
   },
   "devDependencies": {
-    "typescript": "^3.9.7",
-    "ts-loader": "^8.0.2"
+    "ts-loader": "^8.0.2",
+    "typescript": "^5.3.3"
   }
 }

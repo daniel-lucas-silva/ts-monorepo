@@ -4,7 +4,8 @@
   "compilerOptions": {
     /* Basic Options */
     "incremental": true,                      /* Enable incremental compilation */
-    "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    "module": "ES2015",     
+    "moduleResolution": "Bundler",                  /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
     "lib": ["ESNEXT"],                        /* Specify library files to be included in the compilation. */
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */,
     "declarationMap": true,                   /* Generates a sourcemap for each corresponding '.d.ts' file. */
@@ -18,11 +19,13 @@
     "baseUrl": "./",                           /* Base directory to resolve non-absolute module names. */
     "rootDir": "./",
     "paths": {                                /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+      "@ts-monorepo/leaf/": ["../leaf/src/"],
       "@ts-monorepo/leaf/*": ["../leaf/src/*"],
+      "@ts-monorepo/core": ["../core/src"],
       "@ts-monorepo/core/*": ["../core/src/*"],
+      "@ts-monorepo/api": ["../api/src"],
       "@ts-monorepo/api/*": ["../api/src/*"]
-    },
-    "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+    },             /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
     // "allowJs": true,                       /* Allow javascript files to be compiled. */
     // "checkJs": true,                       /* Report errors in .js files. */
     // "outFile": "./",                       /* Concatenate and emit output to single file. */

@@ -3,15 +3,16 @@
   "author": "chance dinkins",
   "license": "MIT",
   "version": "0.0.2",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "9.5.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@testing-library/react": "^10.0.1",
@@ -30,6 +31,7 @@
     "jest-watch-typeahead": "^0.5.0",
     "lint-staged": "^10.0.10",
     "prettier": "^2.0.2",
-    "typescript": "^3.8.3"
-  }
+    "typescript": "^5.3.3"
+  },
+  "gitHead": "2f787affbc062f223cb31b3713b3306f229d207e"
 }

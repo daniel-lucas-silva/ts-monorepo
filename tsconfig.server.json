@@ -2,11 +2,17 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",                     /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
-    "target": "ESNext",                       /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */
-    "paths": {                                /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+    "moduleResolution": "Bundler",
+    "module": "ES6",
+    "target": "ES5",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@ts-monorepo/leaf": ["../leaf/src"],
       "@ts-monorepo/leaf/*": ["../leaf/src/*"],
+      "@ts-monorepo/core": ["../core/src"],
       "@ts-monorepo/core/*": ["../core/src/*"],
+      "@ts-monorepo/api": ["../api/src"],
       "@ts-monorepo/api/*": ["../api/src/*"],
     }
   },
