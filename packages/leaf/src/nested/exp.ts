@@ -1,1 +1,2 @@
-export const experiment = () => "Experiment Successful";
+export const experiment = () => 'Experiment Successful'
+export const nothing = () => ''

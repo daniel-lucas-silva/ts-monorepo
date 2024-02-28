@@ -11,7 +11,6 @@
     "version": {
       "message": "chore(release): publish %s [skip ci]",
       "conventionalCommits": true,
-      "changelogPreset": "conventionalCommits",
       "allowBranch": [
         "master"
       ]

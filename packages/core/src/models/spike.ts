@@ -1,4 +1,4 @@
-import { experiment } from '@ts-monorepo/leaf';
+import { experiment, nothing } from '@ts-monorepo/leaf';
 
 export class Spike {
   message: string;
@@ -6,5 +6,6 @@ export class Spike {
   constructor(message: string) {
     this.message = message;
     this.experiment = experiment;
+    nothing()
   }
 }
