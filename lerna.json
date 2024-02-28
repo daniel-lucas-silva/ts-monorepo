@@ -1,8 +1,20 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*"
+  ],
   "npmClient": "yarn",
   "version": "independent",
   "esModule": true,
-  "access": "public"
+  "access": "public",
+  "command": {
+    "version": {
+      "message": "chore(release): publish %s [skip ci]",
+      "conventionalCommits": true,
+      "changelogPreset": "conventionalCommits",
+      "allowBranch": [
+        "master"
+      ]
+    }
+  }
 }
