@@ -1,6 +1,6 @@
 {
   "name": "@ts-monorepo/core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "leaf node",
   "author": "chance dinkins",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "default": "./dist/index.js"
   },
   "dependencies": {
-    "@ts-monorepo/leaf": "^0.1.0"
+    "@ts-monorepo/leaf": "^0.1.1"
   },
   "scripts": {
     "clean": "rimraf tsconfig.tsbuildinfo dist",
