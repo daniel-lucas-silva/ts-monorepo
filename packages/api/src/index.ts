@@ -4,3 +4,4 @@ export const s = new Spike('sdf')
 
 console.log(s.experiment())
 console.log(s)
+// console.log("TEST")
