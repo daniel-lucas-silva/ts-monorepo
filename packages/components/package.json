@@ -1,6 +1,6 @@
 {
   "name": "@ts-monorepo/components",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "gitHead": "2f787affbc062f223cb31b3713b3306f229d207e",
   "exports": {
     "types": "./src/index.ts",
